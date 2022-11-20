@@ -8,7 +8,8 @@ export default <Partial<Config>>{
           base: '#FF5252',
         },
         secondary: {
-          base: '#1A1D24'
+          base: '#1A1D24',
+          darkest: '#0c0c0d'
         }
       }
     },

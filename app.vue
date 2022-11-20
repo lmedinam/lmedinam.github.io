@@ -39,7 +39,7 @@
         </div>
       </div>
     </aside>
-    <main class="col-span-8 px-10 py-8">
+    <main class="col-span-8 px-10 py-8 text-secondary-darkest">
       <div class="max-w-screen-md">
         <NuxtPage />
       </div>
