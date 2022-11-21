@@ -55,6 +55,33 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <h3 class="text-primary-base font-normal text-5xl mb-4">
+        Mis <span class="font-bold">Proyectos Personales</span>
+      </h3>
+      <div class="grid grid-cols-12 gap-6 ml-8 mt-8">
+        <div class="col-span-12 md:col-span-7">
+          <p class="mb-4">
+            As Full-Stack Developer I manage a bunch of frameworks and librarios to create and deploy applications, following good practices and the best security standards.
+          </p>
+          <p>
+            See all in <a class="text-primary-base" href="https://github.com/lmedinam" target="_blank">GitHub</a>.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-5">
+          <ul class="space-y-4">
+            <li v-for="(project, i) in personalProjects" v-bind:key="i">
+              <h4 v-text="project.title" class="text-2xl font-bold"></h4>
+              <p v-text="project.text"></p>
+              <a class="text-primary-base" v-bind:href="project.website" target="_blank">
+                Website
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -71,6 +98,10 @@ export default {
         { title: 'Larasapien', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' },
         { title: 'Bulgari Latam PR', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' },
         { title: 'Dior Expertise', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+      ],
+      personalProjects: [
+        { title: 'MockGopher', text: 'Mock API server in a ease.', website: 'https://github.com/lmedinam/mockgopher' },
+        { title: 'MockGopher', text: 'Mock API server in a ease.', website: 'https://github.com/lmedinam/mockgopher' },
       ]
     }
   }
