@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12 font-light">
+  <div class="grid grid-cols-12 font-light dark:bg-secondary-darkest">
     <aside class="col-span-12 md:col-span-4">
       <div class="md:min-h-screen text-white bg-secondary-base sticky top-0">
         <div class="max-w-md ml-auto px-4 py-16 md:py-8 space-y-8">
@@ -39,7 +39,7 @@
         </div>
       </div>
     </aside>
-    <main class="col-span-12 md:col-span-8 px-4 md:px-10 py-8 text-secondary-darkest">
+    <main class="col-span-12 md:col-span-8 px-4 md:px-10 py-8 text-secondary-darkest dark:text-white">
       <div class="max-w-screen-md">
         <NuxtPage />
       </div>
