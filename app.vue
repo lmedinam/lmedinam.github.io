@@ -6,10 +6,10 @@
           <div class="space-y-2">
             <h1>
               <span class="block text-5xl">Luis Medina</span>
-              <span class="block text-3xl text-primary-base">Full-Stack Developer</span>
+              <span class="block text-3xl text-primary-base">Desarrollador Full-Stack</span>
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p>Construyo sistemas sólidos y escalables con una excelente experiencia de usuario.</p>
+            <p>Trabajo con múltiples Frameworks y tecnologías para crear sistemas eficientes y seguros.</p>
           </div>
           <div>
             <h3 class="text-3xl text-primary-base mb-2">Esto es lo que hago</h3>
