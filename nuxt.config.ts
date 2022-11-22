@@ -10,7 +10,10 @@ export default defineNuxtConfig({
             ],
             link: [
                 { rel: 'icon', href: '/favicon.png' }
-            ]
+            ],
+            htmlAttrs: {
+                lang: 'es'
+            }
         }
     }
 })
