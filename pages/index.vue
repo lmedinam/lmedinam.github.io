@@ -1,100 +1,64 @@
 <template>
   <div class="space-y-16">
-    <section>
-      <h3 class="text-primary-base font-normal text-5xl mb-4">
-        Este soy <span class="font-bold">Yo</span>
-      </h3>
-      <div class="grid grid-cols-12 gap-6 ml-8 mt-8">
-        <div class="col-span-12 md:col-span-7">
-          <p class="mb-4">
-            Soy desarrollador desde el 2017 aproximadamente. Empecé en el desarrollo de sistemas 
-            aprendiendo Java, con el tiempo fui moviéndome hacia PHP gracias a 
-            la facilidad y velocidad de Laravel.
-          </p>
-          <div class="grid grid-cols-2 gap-12 md:gap-6">
-            <div>
-              <span class="block font-bold text-3xl">5+</span>
-              <span class="block">Años de experiencia</span>
-            </div>
-            <div>
-              <span class="block font-bold text-3xl">10+</span>
-              <span class="block">Proyectos terminados</span>
-            </div>
+    <section class="grid grid-cols-2 min-h-[80vh] mt-[15vh]">
+      <div class="relative overflow-visible flex flex-col justify-center">
+        <BackLight />
+        <h1 class="text-primary-base font-normal text-5xl relative">
+          Luis Medina
+          <p class="text-primary">Desarrollador Web</p>
+        </h1>
+        <p class="relative mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut
+          labore et dolore
+          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <div class="grid grid-cols-2 gap-4 mt-12 relative">
+          <div class="text-3xl">
+            <span class="font-bold">7+</span> <br>
+            Años de <br> experiencia
+            <div class="w-1/5 h-1 bg-primary rounded-full mt-4"></div>
           </div>
-        </div>
-        <div class="col-span-12 md:col-span-5">
-          <h4 class="text-primary-base">Skill-Set</h4>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-4 text-2xl font-bold">
-            <li>Laravel</li>
-            <li>.Net Core</li>
-            <li>Livewire</li>
-            <li>Blazor</li>
-            <li>Alpine.js</li>
-            <li>Vue</li>
-            <li>Nuxt</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div class="col-span-12">
-          <p class="mb-4">
-            A lo largo de los años he ido aprendiendo y usando otros Frameworks, me gusta mucho
-            el desarrollo en Vue.js con el uso de Nuxt para consumir una API.
-          </p>
-          <p class="mb-4">
-            Mi última adición a los Frameworks y lenguajes que manejo fue C# con .NET Core, una experiencia
-            totalmente nueva para mí que definitivamente se convirtió en una de mis opciones preferidas
-            a la hora de desarrollar sistemas.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h3 class="text-primary-base font-normal text-5xl mb-4">
-        Últimos <span class="font-bold">Proyectos</span>
-      </h3>
-      <div class="ml-8 mt-8">
-        <p class="mb-8">
-          
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 md:gap-y-0">
-          <div 
-            class="rounded p-4 aspect-[16/9]"
-            v-for="(project, i) in latestProjects" v-bind:key="i"
-            v-bind:class="[i % 2 == 0 ? evenClass : oddClass]"
-          >
-            <span class="block font-bold mb-2 text-2xl" v-text="project.title"></span>
-            <p v-text="project.text"></p>
+          <div class="text-3xl">
+            <span class="font-bold">21+</span> <br>
+            Proyectos <br>
+            finalizados
+            <div class="w-1/5 h-1 bg-primary rounded-full mt-4"></div>
           </div>
         </div>
       </div>
     </section>
-
-    <section>
-      <h3 class="text-primary-base font-normal text-5xl mb-4">
-        Mis <span class="font-bold">Proyectos Personales</span>
-      </h3>
-      <div class="grid grid-cols-12 gap-6 ml-8 mt-8">
-        <div class="col-span-12 md:col-span-7">
-          <p class="mb-4">
-            Uno de mis hobbies es la programación, aprovecho mi tiempo libre para trabajar en proyectos que me apasionen, incluso desarrollando juegos.
-          </p>
-          <p>
-            Puedes ver más en mi <a class="text-primary-base" href="https://github.com/lmedinam" target="_blank">GitHub</a>.
-          </p>
-        </div>
-        <div class="col-span-12 md:col-span-5">
-          <ul class="space-y-4">
-            <li v-for="(project, i) in personalProjects" v-bind:key="i">
-              <h4 v-text="project.title" class="text-2xl font-bold"></h4>
-              <p v-text="project.text"></p>
-              <a class="text-primary-base" v-bind:href="project.website" target="_blank">
-                Website
-              </a>
-            </li>
-          </ul>
+    <section class="grid grid-cols-2 min-h-[80vh] gap-24 items-center">
+      <div class="relative">
+        <BackLight />
+        <div class="aspect-[16/14]">
+          <img src="/img/code.png" alt="Codigo de Handmail"
+            class="mix-blend-luminosity cover h-full w-full rounded-lg object-cover translate-y-4 translate-x-4">
         </div>
       </div>
+      <div class="space-y-6 flex flex-col justify-center">
+        <h3 class="text-5xl font-bold text-primary">Acerca de mi</h3>
+        <p class="text-3xl">Mi nombre es <b>Luis Medina</b> y soy desarrollador desde el 2016.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      </div>
+    </section>
+    <section class="max-w-screen-lg mx-auto w-full relative space-y-10">
+      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarrollador Web" company="Elliptic Marketing">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      </CareerCard>
+      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarrollador Web" company="Elliptic Marketing" :reverse="true">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      </CareerCard>
+    </section>
+    <section>
+      <ProjectsGallery class="mt-24">
+        <ProjectCard title="Duracel Summit 2022" img="/img/duracell-summit-2022.png" v-for="i in 5">
+
+        </ProjectCard>
+      </ProjectsGallery>
     </section>
   </div>
 </template>
@@ -103,8 +67,6 @@
 export default {
   data() {
     return {
-      oddClass: 'bg-primary-base transform md:mt-12',
-      evenClass: 'bg-secondary-base text-white',
       latestProjects: [
         { title: 'Duracell Summit 2022', text: 'Registro de invitados para la convencion de Duracell.' },
         { title: 'Workscape Store', text: 'Tienda para Workscape de catalogo y pedidos conectados con SAP Ariba.' },

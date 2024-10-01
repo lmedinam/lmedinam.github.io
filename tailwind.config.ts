@@ -4,13 +4,10 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        primary: {
-          base: '#FF5252',
-        },
-        secondary: {
-          base: '#1A1D24',
-          darkest: '#0c0c0d'
-        }
+        primary: '#FF4949',
+        secondary: '#5B2E2E', 
+        base: '#151414',
+        acrylic: '#0F0E0E'
       }
     },
     fontFamily: {
