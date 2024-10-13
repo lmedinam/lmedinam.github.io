@@ -13,6 +13,7 @@
           Menu +
         </button>
       </Acrylic>
+      <!--
       <Acrylic class="px-4 py-2 flex space-x-4">
         <button>
           EN
@@ -21,6 +22,7 @@
           ES
         </button>
       </Acrylic>
+      -->
     </div>
   </nav>
 </template>

@@ -10,8 +10,13 @@
       <Acrylic class="p-8 min-h-[250px]" :class="reverse ? 'text-right' : ''">
         <h3 class="text-3xl">{{ props.position }}</h3>
         <h4 class="text-2xl text-primary">{{ props.company }}</h4>
-        <div class="mt-4">
+        <div class="mt-4 text-[0.925rem]">
           <slot></slot>
+        </div>
+        <div class="mt-4 flex flex-wrap -mb-2" :class="reverse ? 'justify-end' : ''">
+          <span class="bg-secondary rounded-lg px-3 py-0.5 text-[0.925rem] mb-2" v-for="technology in props.technologies" :class="reverse ? 'ml-2' : 'mr-2'">
+            {{ technology }}
+          </span>
         </div>
       </Acrylic>
     </div>
@@ -24,6 +29,7 @@ const props = withDefaults(defineProps<{
   to: string
   company: string
   position: string
-  reverse: boolean
+  reverse?: boolean
+  technologies: string[]
 }>(), { reverse: false });
 </script>

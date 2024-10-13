@@ -7,24 +7,26 @@
           Luis Medina
           <p class="text-primary">Desarrollador Web</p>
         </h1>
-        <p class="relative mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut
-          labore et dolore
-          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <p class="relative mt-4">He estado desarrollando para la web desde 2019, enfocándome principalmente en PHP,
+          Laravel y Livewire. Además, tengo experiencia en Vue.js y utilizo otros lenguajes como Go para mis proyectos
+          personales.</p>
         <div class="grid grid-cols-2 gap-4 mt-12 relative">
           <div class="text-3xl">
-            <span class="font-bold">7+</span> <br>
+            <span class="font-bold">5+</span> <br>
             Años de <br> experiencia
             <div class="w-1/5 h-1 bg-primary rounded-full mt-4"></div>
           </div>
           <div class="text-3xl">
-            <span class="font-bold">21+</span> <br>
+            <span class="font-bold">15+</span> <br>
             Proyectos <br>
             finalizados
             <div class="w-1/5 h-1 bg-primary rounded-full mt-4"></div>
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <SkillSet :tecnologies="['PHP', 'Laravel', 'Livewire', 'MySQL', 'Tailwind', 'Alpine.js', 'Vue.js', 'Nuxt', 'HTML5', 'CSS3', 'JavaScript', 'PHPUnit', 'Redis', 'Git', 'Go']" />
     </section>
     <section class="grid grid-cols-2 min-h-[80vh] gap-24 items-center">
       <div class="relative">
@@ -36,21 +38,41 @@
       </div>
       <div class="space-y-6 flex flex-col justify-center">
         <h3 class="text-5xl font-bold text-primary">Acerca de mi</h3>
-        <p class="text-3xl">Mi nombre es <b>Luis Medina</b> y soy desarrollador desde el 2016.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <p class="text-3xl">Mi nombre es <b>Luis Medina</b> y soy desarrollador desde el 2019.</p>
+        <p>Mi experiencia se centra en el desarrollo web con Laravel, potenciando mis proyectos con Livewire, Tailwind y
+          Alpine.js. Además, soy capaz de desarrollar front-ends completos utilizando Vue.js, adaptándome a las
+          necesidades específicas de cada proyecto.</p>
+        <p>
+          Mi trabajo no se limita a la creación de nuevas aplicaciones. También me he enfrentado a desafíos como la
+          modernización de proyectos legacy, la resolución de problemas en código existente y la integración de nuevas
+          tecnologías en proyectos en marcha.
+        </p>
+        <p>
+          He trabajado con diversas API y SDK para integrar servicios de terceros en proyectos de distinta complejidad.
+        </p>
       </div>
     </section>
     <section class="max-w-screen-lg mx-auto w-full relative space-y-10">
-      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarrollador Web" company="Elliptic Marketing">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarollador Full-Stack" company="Elliptic Marketing" :technologies="['PHP', 'Laravel', 'Livewire', 'MySQL', 'Tailwind', 'Alpine.js', 'Vue.js', 'HTML5', 'CSS3', 'JavaScript', 'PHPUnit', 'Redis', 'Git']">
+        <section class="space-y-4">
+          <p>
+            Diseño e implementación de módulos que mejoran la eficiencia y la funcionalidad de los sistemas de intranet.
+          </p>
+          <p>Desarrollo de páginas de check-in personalizadas para eventos de alto perfil organizados por Duracell, Dior
+            Latam y Bvlgari, garantizando una experiencia fluida y profesional para los asistentes.</p>
+          <p>Integración con servicios de terceros como Akeneo y Ariba PunchOut en e-commerce o intranet.</p>
+        </section>
       </CareerCard>
-      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarrollador Web" company="Elliptic Marketing" :reverse="true">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      <CareerCard from="Nov 2019" to="Oct 2024" position="Desarrollador Full-Stack" company="DC Urbina Solutions"
+        :reverse="true" :technologies="['PHP', 'Laravel', 'Node.js', 'MySQL', 'Vue.js', 'HTML5', 'CSS3', 'JavaScript', 'PHPUnit', 'Git']">
+        <section class="space-y-4">
+          <p>Diseño y creación de soluciones tecnológicas a medida, adaptadas a las necesidades específicas de cada
+            cliente. </p>
+
+          <p>Implementación y prueba de sistemas para asegurar su funcionalidad y rendimiento óptimo antes de la
+            entrega.
+          </p>
+        </section>
       </CareerCard>
     </section>
     <section>
