@@ -1,5 +1,5 @@
 <template>
-    <div class="light-gradient w-full h-full aspect-square absolute opacity-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.75]"></div>
+    <div class="light-gradient w-full h-full aspect-square absolute opacity-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.75] pointer-events-none"></div>
 </template>
 
 <style>
