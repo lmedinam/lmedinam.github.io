@@ -77,7 +77,36 @@
     </section>
     <section>
       <ProjectsGallery class="mt-24">
-        <ProjectCard title="Duracel Summit 2022" img="/img/duracell-summit-2022.png" v-for="i in 5">
+        <ProjectCard 
+          title="Shopify Tailwind Theme" 
+          thumb="/portfolio/shopify-theme/thumb.webp"
+          :images="[
+            '/portfolio/shopify-theme/homepage.webp', 
+            '/portfolio/shopify-theme/collection.webp'
+          ]"
+        >
+
+        </ProjectCard>
+        <ProjectCard 
+          title="Duracel Summit 2022" 
+          thumb="/portfolio/duracell/thumb.png"
+          :images="[
+            '/portfolio/duracell/full-site.png', 
+            '/portfolio/duracell/agenda.png'
+          ]"
+        >
+
+        </ProjectCard>
+        <ProjectCard 
+          title="Workscape B2B Store" 
+          thumb="/portfolio/workscape/thumb.webp"
+          :images="[
+            '/portfolio/workscape/homepage.webp', 
+            '/portfolio/workscape/search-page.webp',
+            '/portfolio/workscape/product-page.webp',
+            '/portfolio/workscape/login.webp'
+          ]"
+        >
 
         </ProjectCard>
       </ProjectsGallery>
